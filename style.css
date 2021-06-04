@@ -363,5 +363,49 @@ footer .footer-icons img{
   .stack-icon {
     display: none;
   }
+ 
   
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu {
+    width: 80%;
+  }
+
+  .education h3 {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+  }
+  .education p {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  
+  .education img {
+    width: 200px;
+  }
+
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu {
+    width: 90%;
+  }
+
+  .education h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+  .education p {
+    padding: 1rem 0;
+    font-size: 1/5rem;
+  }
 }
