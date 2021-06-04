@@ -1,197 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <link rel="icon" type="image/png" href="resources/icons/profile.jpg"> -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" type="text/javascript" defer></script>
-
-    <!-- smtp -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <!-- google icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Mera Mail</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="resources/icons/profile.jpg">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" async></script>
+  <title>Chandresh Singh</title>
 </head>
 <body>
+  <div class="container">
     <header>
-        <div class="header-left">
-            <div class="icon">
-                <span class="material-icons">menu</span>
+      <!-- <img src="resources/wave.svg" alt=""> -->
+      <nav>
+        <div class="max-width">
+          <div class="logo"><a href="">Portfolio</a></div>
+            <ul class="menu">
+              <li><a href="">About</a></li>
+              <li><a href="">Experience</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="">Project</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+              <i class="fa fa-bars"></i>
             </div>
-            <img src="resources/gmail-icon.png" alt="Gmail">
+          </div>
         </div>
-        <div class="header-middle">
-            <span class="material-icons">search</span>
-            <input type="text" placeholder="Search">
-            <span class="material-icons">arrow_drop_down</span>
-        </div>
-        <div class="header-right">
-            <span class="material-icons">apps</span>
-            <span class="material-icons">notifications</span>
-            <span class="material-icons">account_circle</span>
-        </div>
+      </nav>
     </header>
-
-    <!-- main -->
-
     <main>
-        <div class="sidebar">
-            <button class="compose">
-                <span class="material-icons">add</span>
-                Compose
-            </button>
-
-            <div class="options">
-                <div class="option-container">
-                    <span class="material-icons">inbox</span>
-                    <h3>Inbox</h3>
-                </div>
-                <div class="option-container">
-                    <span class="material-icons">star</span>
-                    <h3>Starred</h3>
-                    </div>
-                <div class="option-container">
-                    <span class="material-icons">access_time</span>
-                    <h3>Snoozed</h3>
-                </div>
-                <div class="option-container">
-                    <span class="material-icons">label_important</span>
-                    <h3>Important</h3>
-                </div>
-                <div class="option-container">
-                    <span class="material-icons">near_me</span>
-                    <h3>Sent</h3>
-                </div>
-                <div class="option-container">
-                    <span class="material-icons">note</span>
-                    <h3>Drafts</h3>
-                </div>
-                <div class="option-container">
-                    <span class="material-icons">expand_more</span>
-                    <h3>More</h3>
-                </div>
-
-                <div class="sidebar-footer">
-                    <div class="sidebar-footer-icons">
-                        <span class="material-icons">person</span>
-                        <span class="material-icons">duo</span>
-                        <span class="material-icons">phone</span>
-                    </div>
-                </div>
-            </div>
+      <section id="profile">
+        <div class="photo">
+          <img src="resources/blob.svg" alt="">
+          <!-- <img src="resources/myimage1.jpg" alt=""> -->
         </div>
-
-        <!-- mail list -->
-        <div class="mail-list">
-            <!-- settings -->
-            <div class="settings">
-                <div class="settings-left">
-                    <input type="checkbox" name="" id="">
-                    <span class="material-icons">arrow_drop_down</span>
-                    <span class="material-icons">redo</span>
-                    <span class="material-icons">more_vert</span>
-                </div>
-                <div class="settings-right">
-                    <span class="material-icons">chevron_left</span>
-                    <span class="material-icons">chevron_right</span>
-                    <span class="material-icons">keyboard_hide</span>
-                    <span class="material-icons">settings</span>
-                </div>
-            </div>
-
-            <!-- mail types -->
-            <div class="mail-type">
-                <div class="mail-type-container c1">
-                    <span class="material-icons">inbox</span>
-                    Primary
-                </div>
-                <div class="mail-type-container c2">
-                    <span class="material-icons">people</span>
-                    Social
-                </div>
-                <div class="mail-type-container c3">
-                    <span class="material-icons">local_offer</span>
-                    Promotions
-                </div>
-            </div>
-
-            <!-- mails -->
-            <div class="mails">
-                <div class="mail-row">
-                    <div class="mail-row-options">
-                        <input type="checkbox" name="" id="">
-                        <span class="material-icons">star_border</span>
-                        <span class="material-icons">label_important</span>
-                    </div>
-
-                    <h3 class="mail-row-title">Apka apna mail</h3>
-                    <div class="mail-row-message">
-                        <h4>This is what a message looks like</h4>
-                    </div>
-                    <p class="mail-row-time">5:35 PM</p>
-                </div>
-            </div>
-
-            <div class="mails">
-                <div class="mail-row">
-                    <div class="mail-row-options">
-                        <input type="checkbox" name="" id="">
-                        <span class="material-icons">star_border</span>
-                        <span class="material-icons">label_important</span>
-                    </div>
-
-                    <h3 class="mail-row-title">Apka apna mail</h3>
-                    <div class="mail-row-message">
-                        <h4>This is what a message looks like</h4>
-                    </div>
-                    <p class="mail-row-time">5:35 PM</p>
-                </div>
-            </div>
-
-
-            <div class="send-mail">
-                <div class="send-mail-bar">
-                    <div class="send-mail-bar-left">
-                        New Message
-                    </div>
-                    <div class="send-mail-bar-right">
-                        <span class="material-icons">minimize</span>
-                        <span class="material-icons">open_in_full</span>
-                        <span class="material-icons">close</span>
-                    </div>
-                </div>
-                <form method="post" enctype="text/plain">
-                    <input type="text" placeholder="Recipients" name="to"><br>
-                    <input type="text" placeholder="Subject" name="sub"><br>
-                    <input type="text" placeholder="Body" size="50" name="body"><br>
-                    <br>
-                    <div class="form-footer">
-                        <div class="form-footer-left">
-                            <input class="form-send" type="button" value="Send Email" onclick="sendEmail()"/>
-                            <span class="material-icons">format_underlined</span>
-                            <span class="material-icons">link</span>
-                            <span class="material-icons">mood</span>
-                            <span class="material-icons">drive_folder_upload</span>
-                        </div>
-                        <div class="form-footer-right">
-                            <span class="material-icons">delete</span>
-                            <span class="material-icons">more_vert</span>
-                        </div> 
-                    </div>
-                </form>
-            </div>
-
-
+        <div class="message">
+          <p>Hy, this is Chandresh Singh</p>
         </div>
+      </section>
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>A passionate individual who always thrive to work on my skills and learn new technologies. Currently Learning PERN Stack.</p>
+      </section>
+
+      <section id="tech">
+        <h2>Tech Stack</h2>
+        <div id="stack">
+          <div class="technologies">
+            <!-- <i class="fa fa-css3" aria-hidden="true"></i>
+            <i class="fa fa-html5" aria-hidden="true"></i> -->
+            <img src="resources/c.png" alt="">
+            <img src="resources/cpp.png" alt="">
+            <img src="resources/html5.png" alt="">
+            <img src="resources/css.png" alt="">
+            <img src="resources/javascript.png" alt="">
+            <img src="resources/my-sql.png" alt="">
+          </div>
+          <!-- <div class="stack-icon"> -->
+          <img class="stack-icon" src="resources/tech-stack.png" alt="">
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <section class="work">
+        <img src="resources/icons/experience.png" alt="">
+        <h3>OxYmora Technologies</h3>
+        <p>05/2019-07/2019</p>
+        <p>Worked On MSP430G2553 platform, and Raspberry Pie. Embedded systems and Internet Of Things.</p>
+
+        <h3>REGex Startup Services</h3>
+        <p>04/2020-06/2020</p>
+        <p>Learned about Data Science and to work on platforms like SnowFlake, Data Bricks, Talend Open Studio (Integration Tool).</p>
+      </section>
+
+      <section class="project">
+        <img src="resources/icons/project.png" alt="">
+        <h3>Zomato Data Analysis(05/2020-06/2020)</h3>
+        <p>Data Science project in which we have analyzed large data given in CSV format and made some useful conclusion in the form of Visualizations on IBM Cognos that can helpful to Costumers as well as to Company.</p>
+
+        <h3>Smart ATM Security(06/2019-07/2019)</h3>
+        <p>ATM Room equipped with Vibration, PIR and IR sensors to detect any unusual activity inside the room then lock the door using Servo with live cast of the camera to the nearby police station with a notification.</p>
+
+        <h3>Smart Traffic Management(09/2019-10/2019)</h3>
+        <p>Dynamically Maintaining the Traffic Light time by measuring Intensity of the Traffic on the road using IR, UltraSonic and other sensors. Also, Clearing the traffic giving priority to Ambulance and other vehicles in urgency.</p>
+      </section>
     </main>
-    
+    <footer>
+      <div class="outer">
+        <p><i class="arrow up"></i></p>
+        <div class="footer-icons">
+          <a href=""><img src="resources/icons/github.png" alt=""></a>
+          <a href=""><img src="resources/icons/linkedin.png" alt=""></a>
+          <a href=""><img src="resources/icons/twitter.png" alt=""></a>
+          <a href=""><img src="resources/icons/email.png" alt=""></a>
+          <a href=""><img src="resources/icons/instagram.png" alt=""></a>
+        </div>
+        <h1></h1>
+        <h5>2021 Developed by Chandresh Singh</h5>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
