@@ -385,8 +385,48 @@ footer .footer-icons img{
 
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   
+  nav .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 4px 15px;
+}
+
+  .technologies {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 0;
+  justify-items:center;
+  align-content: space-between;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 20rem;
+  padding-top: 3rem;
+  height: auto;
+  margin: 5%;
+}
+
+.message p {
+  font-size: 4rem;
+}
+
+.stack-icon {
+  display: none;
+}
+
   .education img {
     width: 200px;
   }
@@ -407,5 +447,14 @@ footer .footer-icons img{
   .education p {
     padding: 1rem 0;
     font-size: 1/5rem;
+  }
+
+  footer .footer-icons img {
+    width: 2rem;
+    padding: 1rem;
+}
+
+  footer h5 {
+    font-size: 12px;
   }
 }
