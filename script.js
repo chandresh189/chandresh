@@ -34,23 +34,15 @@ document.querySelector(".compose").onclick = function () {
 
 function sendEmail() {
 
-    // var data = $('form').serializeArray();
-    // var from = "chetanyajangir9753@gmail.com";
-
-    // console.log(data[0].value, data[1].value, data[2].value);
+    var data = $('form').serializeArray();
+    var from = "chetanyajangir9753@gmail.com";
 
 	Email.send({
-	// Username : from,
-	// Password : pass,
-	// To : data[0].value,
-	// From : from,
-	// Subject : data[1].value,
-	// Body : data[2].value,
-    SecureToken : "9482ab8f-f923-48fe-91a4-26b33734a97e",
-	To : 'chandreshsingh23@gmail.com',
-	From : "chetanyajangir9753@gmail.com",
-	Subject : "sub h ye",
-	Body : "body h ye",
+    SecureToken : "4ebfd2d8-f1c8-4b3b-9d3f-2ccb9eb8e743",
+    To : data[0].value,
+	From : from,
+	Subject : data[1].value,
+	Body : data[2].value,
 	}).then(
 		message => alert(message)
 	);
