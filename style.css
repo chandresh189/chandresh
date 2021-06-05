@@ -1,4 +1,4 @@
-* {
+'* {
   margin: 0% 0%;
   padding: 0% 0%;
 }
@@ -302,6 +302,52 @@ footer .footer-icons img{
 }
 
 
+/* project page */
+
+.project img {
+  width: 30rem;
+  margin: 4rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* gap: 10px 30px; */
+  justify-items: center;
+  align-content: space-around;
+}
+
+.project-container {
+  /* width: 300px; */
+  background-color: #000;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.project-container h3 {
+  font-size: 2.5rem;
+}
+
+.project-container h2 {
+  font-size: 2rem;
+}
+
+.project-container p {
+  font-family: 'Roboto';
+  font-size: 2rem;
+  padding: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.project-container button {
+  height: 2rem;
+  width: 5rem;
+  background-color:#2b2a2b;
+}
+
 
 /* Responsive Media Query */
 
@@ -363,8 +409,25 @@ footer .footer-icons img{
   .stack-icon {
     display: none;
   }
- 
-  
+
+  /* contact */
+
+  .contact-image img {
+    width: 25rem;
+  }
+
+  .contact-main {
+    flex-direction: column;
+}
+
+  .address {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+  }
+
+  /* education */
+
   .education-container {
     flex-direction: column;
     align-items: center;
@@ -394,7 +457,7 @@ footer .footer-icons img{
     align-items: center;
     padding: 0;
     margin: 4px 15px;
-}
+  }
 
   .technologies {
   display: grid;
@@ -402,30 +465,56 @@ footer .footer-icons img{
   gap: 0;
   justify-items:center;
   align-content: space-between;
-}
+  }
 
-#profile {
+  #profile {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-}
+  }
 
-.photo img {
-  width: 20rem;
-  padding-top: 3rem;
-  height: auto;
-  margin: 5%;
-}
+  .photo img {
+    width: 20rem;
+    padding-top: 3rem;
+    height: auto;
+    margin: 5%;
+  }
 
-.message p {
-  font-size: 4rem;
-}
+  .message p {
+    font-size: 4rem;
+  }
 
-.stack-icon {
-  display: none;
-}
+  .stack-icon {
+    display: none;
+  }
+
+  /* contact */
+
+  .contact-icons img {
+    width: 2.5rem;
+    padding: 1rem 0.7rem;
+    transition-duration: 0.2s;
+  }
+
+  .contact-text p {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .address {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+  }
+
+  .address img {
+    padding: 20px 0;
+    width: 15rem;
+  }
+
+  /* education */
 
   .education img {
     width: 200px;
@@ -449,10 +538,12 @@ footer .footer-icons img{
     font-size: 1/5rem;
   }
 
+  /* footer */
+
   footer .footer-icons img {
     width: 2rem;
     padding: 1rem;
-}
+  }
 
   footer h5 {
     font-size: 12px;
