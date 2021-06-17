@@ -547,7 +547,7 @@ footer {
     position: absolute;
     width: 395px;
     height: 413px;
-    left: 50px;
+    left: 0px;
     top: 150px;
     background: linear-gradient(#f00, #f0f);
     border-radius: 50%;
