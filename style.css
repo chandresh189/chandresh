@@ -547,8 +547,8 @@ footer {
     position: absolute;
     width: 395px;
     height: 413px;
-    left: 0px;
-    top: 0px;
+    left: 50px;
+    top: 150px;
     background: linear-gradient(#f00, #f0f);
     border-radius: 50%;
     z-index: 0;
@@ -559,9 +559,9 @@ footer {
     overflow: hidden;
     width: 395px;
     height: 413px;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(#f00,#fd6e1b , #f0f);
+    top: 400px;
+    left: -250px;
+    background: linear-gradient(#f00, #fd6e1b , #f0f);
     border-radius: 50%;
     z-index: 0;
   }
@@ -570,8 +570,8 @@ footer {
     position: absolute;
     width: 395px;
     height: 413px;
-    left: 0px;
-    top: 0px;
+    left: -200px;
+    top: -280px;
     background: linear-gradient(#0422ce, rgb(214, 214, 214));
     border-radius: 50%;
     z-index: 0;
