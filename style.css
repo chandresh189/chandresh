@@ -547,7 +547,7 @@ footer {
     position: absolute;
     width: 395px;
     height: 413px;
-    left: 0px;
+    left: -80px;
     top: 150px;
     background: linear-gradient(#f00, #f0f);
     border-radius: 50%;
@@ -580,6 +580,7 @@ footer {
   .education {
     background-color: #161625;
     box-sizing: border-box;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

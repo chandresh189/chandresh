@@ -1,7 +1,12 @@
 $(document).ready(function(){
-	$("p:not(nav .menu)").click(function() {
-		document.querySelector("nav .menu").classList.remove('active')
+	$("main").click(function() {
+		console.log('out clicked');
+		document.querySelector("nav .menu").classList.remove('active');
 	})
+
+	window.onscroll = function(){
+		document.querySelector("nav .menu").classList.remove('active');
+	};
 
 	$(window).scroll(function() {
 		if(this.scrollY > 50) {
