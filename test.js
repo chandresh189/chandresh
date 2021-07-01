@@ -73,6 +73,25 @@ for (i = 0; i < AllClasses.length; i++) {
 
 
 
+if(localStorage.getItem('show') === null) {
+	console.log('pahli bar');
+	localStorage.setItem('show', 1);
+	console.log('pahli baar dikhna chahiye');
+	var body = $('#pop-up-id');
+	body.addClass('pop-up');
+	setTimeout(function() {
+    	body.removeClass('pop-up');
+		body.addClass('show-pop');
+	}, 4000);
+}
+else {
+	console.log('har bar');
+	var body = $('#pop-up-id');
+	body.addClass('show-pop');
+}
+
+
+
 
 
 VanillaTilt.init(document.querySelectorAll(".card"), {
