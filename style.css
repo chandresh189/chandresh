@@ -577,6 +577,34 @@ footer {
     z-index: 0;
   }
 
+  .pop-up{
+    position: absolute;
+    overflow: hidden;
+    top: 80px;
+    right: 20px;
+    width: 30rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #000;
+    /* transition-delay: 2s;
+    transition: 4s;
+    -webkit-transition: 4s;
+    -moz-transition: 4s;
+    transform: translateX(250px);
+    transition-timing-function: ease-out; */
+    z-index: 1000;
+  }
+
+  .pop-up p{
+    font-size: 2rem;
+    color: rgb(255, 0, 149);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .show-pop {
+    display: none;
+  }
+
   .education {
     background-color: #161625;
     box-sizing: border-box;
@@ -959,6 +987,22 @@ footer {
 
    /* education */
 
+  .pop-up{
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .pop-up p {
+    font-size: 1rem;
+    margin: 1rem 0.2rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
 
    .education img {
     width: 250px;
